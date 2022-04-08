@@ -1,1 +1,5 @@
-console.log('Is it working?');
+import './style.css';
+
+const homePage = (() => {
+
+})();
