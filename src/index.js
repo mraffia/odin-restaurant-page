@@ -1,5 +1,6 @@
 import './style.css';
 import generateHomePage from './homePage.js';
+import generateContactPage from './contactPage.js';
 
 function currentPage() {
     const header = document.createElement('div');
@@ -15,7 +16,7 @@ function currentPage() {
     footer.innerHTML = 'By yours truly, <a href="https://github.com/mraffia"> mraffia</a>';
 
     header.appendChild(h1);
-    content.appendChild(generateHomePage());
+    content.appendChild(generateContactPage());
     
     document.body.appendChild(header);
     document.body.appendChild(content);

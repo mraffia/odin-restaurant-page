@@ -5,7 +5,8 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/index.js',
-        print: './src/homePage.js',
+        homePage: './src/homePage.js',
+        contactPage: './src/contactPage.js',
     },
     devtool: 'inline-source-map',
     devServer: {
