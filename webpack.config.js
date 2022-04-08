@@ -3,14 +3,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+        print: './src/homePage.js',
+    },
     devtool: 'inline-source-map',
     devServer: {
-      static: './dist',
+        static: './dist',
     },
     plugins: [
         new HtmlWebpackPlugin({
-        title: 'Development',
+            title: 'Odin Restaurant Page | mraffia',
         }),
     ],
     output: {

@@ -1,5 +1,4 @@
 import './style.css';
+import generateHomePage from './homePage.js';
 
-const homePage = (() => {
-
-})();
+document.body.appendChild(generateHomePage());
