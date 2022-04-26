@@ -1,4 +1,4 @@
-import Restaurant from './images/restaurant.jpg'
+import SlyShop from './images/slyshop.jpg'
 
 export default function generateHomePage() {
     const p = document.createElement('p');
@@ -8,9 +8,8 @@ export default function generateHomePage() {
     img.classList.add('banner');
     homePageContent.classList.add('home-page');
 
-    p.textContent = "Welcome to Aliazone! A (self-proclaimed) 5 star restaurant with delicious food and drinks. Take a look at our menus! And don't hesitate to order or ask us anything via the numbers at the contact page";
-    // Photo by Igor Starkov: https://www.pexels.com/photo/photo-of-cafe-interior-1307698/
-    img.src = Restaurant;
+    p.textContent = "Welcome to Sly's Shop! Sly is a Merchant in Hollow Knight. He sells many wares at his shop in Dirtmouth for Geo but drives a hard bargain. Take a look at the menus! Don't hesitate to order or ask Sly anything via the numbers at the contact page";
+    img.src = SlyShop;
 
     homePageContent.appendChild(img);
     homePageContent.appendChild(p);

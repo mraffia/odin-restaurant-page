@@ -6,9 +6,9 @@ export default function generateContactPage() {
 
     contactPageContent.classList.add('contact-page');
 
-    subHeader.textContent = "Contact Us!";
+    subHeader.textContent = "Contact Sly!";
     number.innerHTML = "<strong>Phone</strong>: 000-456-777";
-    address.innerHTML = "<strong>Address</strong>: Hollywood Boulevard 42, Los Angeles, USA";
+    address.innerHTML = "<strong>Address</strong>: Dirthmouth, Hallownest";
 
     contactPageContent.appendChild(subHeader);
     contactPageContent.appendChild(number);
