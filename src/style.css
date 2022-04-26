@@ -14,7 +14,11 @@ body {
     align-items: center;
 }
 
-h1, h2, p {
+.page-header,
+.page-subheader,
+.home-desc,
+.contact-number,
+.contact-address {
     flex: 1;
     text-align: center;
     width: 30vw;
@@ -28,6 +32,36 @@ h1, h2, p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.menu-grid {
+    display: grid;
+    width: 600px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 6px;
+    gap: 20px;
+}
+
+.menu-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid lightgray;
+}
+
+.menu-block:hover {
+    background-color: lightgray;
+    text-decoration: none;
+}
+
+.menu-image {
+    width: 80px;
 }
 
 .banner {

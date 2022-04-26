@@ -8,12 +8,12 @@ export default function generateMenuPage() {
         {
             name: "Nailmaster's Glory",
             image: NailmastersGlory,
-            description: "Reduces the time needed to charge Nail Arts"
+            description: "Reduces the time needed to charge Nail Arts."
         },
         {
             name: "Gathering Swarm",
             image: GatheringSwarm,
-            description: "Spawns a swarm that collects dropped Geo"
+            description: "Spawns a swarm that collects dropped Geo."
         },
         {
             name: "Stalwart Shell",
@@ -23,7 +23,7 @@ export default function generateMenuPage() {
         {
             name: "Wayward Compass",
             image: WaywardCompass,
-            description: "Shows the location of the Knight on the Map"
+            description: "Shows the location of the Knight on the Map."
         },
     ]
 

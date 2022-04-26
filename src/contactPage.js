@@ -5,6 +5,9 @@ export default function generateContactPage() {
     const contactPageContent = document.createElement('div');
 
     contactPageContent.classList.add('contact-page');
+    subHeader.classList.add('page-subheader');
+    number.classList.add('contact-number');
+    address.classList.add('contact-adress');
 
     subHeader.textContent = "Contact Sly!";
     number.innerHTML = "<strong>Phone</strong>: 000-456-777";

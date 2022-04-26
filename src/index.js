@@ -13,6 +13,8 @@ function currentPage() {
     content.setAttribute('id', 'content');
     footer.setAttribute('id', 'footer');
 
+    h1.classList.add('page-header');
+
     h1.textContent = "Great Nailsage Sly's Shop";
     footer.innerHTML = 'By yours truly, <a href="https://github.com/mraffia"> mraffia</a>';
 
