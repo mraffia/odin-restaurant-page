@@ -27,6 +27,17 @@ h1, h2, p {
     align-items: center;
 }
 
+.banner {
+    border-radius: 6px;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #footer {
     display: flex;
     align-items: center;
