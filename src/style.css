@@ -20,7 +20,10 @@ h1, h2, p {
     width: 30vw;
 }
 
-#content {
+#content,
+.home-page,
+.contact-page,
+.menu-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,13 +32,6 @@ h1, h2, p {
 
 .banner {
     border-radius: 6px;
-}
-
-.home-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #footer {
