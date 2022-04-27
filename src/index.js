@@ -17,6 +17,9 @@ function currentPage() {
     h1.classList.add('page-header');
     tabs.classList.add('tabs');
 
+    h1.textContent = "Great Nailsage Sly's Shop";
+    footer.innerHTML = 'By yours truly, <a href="https://github.com/mraffia"> mraffia</a>';
+
     let pages = [
         {
             name: "Home",
@@ -35,16 +38,26 @@ function currentPage() {
     for (let i = 0; i < pages.length; i++) {
         const tab = document.createElement('li');
         tab.classList.add('tab');
+        tab.setAttribute('id', pages[i].name.toLowerCase());
         tab.textContent = pages[i].name;
+
+        tab.addEventListener('click', (e) => {
+            content.innerHTML = '';
+            if (e.target.id === 'home') {
+                content.appendChild(pages[0].pageContent);
+            } else if (e.target.id === 'goods') {
+                content.appendChild(pages[1].pageContent);
+            } else if (e.target.id === 'contact') {
+                content.appendChild(pages[2].pageContent);
+            }
+        });
+
         tabs.appendChild(tab);
     }
 
-    h1.textContent = "Great Nailsage Sly's Shop";
-    footer.innerHTML = 'By yours truly, <a href="https://github.com/mraffia"> mraffia</a>';
-
     header.appendChild(h1);
     header.appendChild(tabs);
-    content.appendChild(generateHomePage());
+    content.appendChild(pages[0].pageContent);
     
     document.body.appendChild(header);
     document.body.appendChild(content);
