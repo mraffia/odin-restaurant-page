@@ -43,6 +43,12 @@ function currentPage() {
 
         tab.addEventListener('click', (e) => {
             content.innerHTML = '';
+
+            for (let i = 0; i < tabs.children.length; i++) {
+                tabs.children[i].classList.remove('active');
+            }
+            e.target.classList.add('active');
+            
             if (e.target.id === 'home') {
                 content.appendChild(pages[0].pageContent);
             } else if (e.target.id === 'goods') {
