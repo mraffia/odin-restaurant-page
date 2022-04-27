@@ -2,6 +2,8 @@ import NailmastersGlory from './images/nailmasters-glory.png'
 import GatheringSwarm from './images/gathering-swarm.png'
 import StalwartShell from './images/stalwart-shell.png'
 import WaywardCompass from './images/waywardcompass.png'
+import SoulCatcher from './images/soulcatcher.png'
+import ShamanStone from './images/shamanstone.png'
 
 export default function generateMenuPage() {
     let menus = [
@@ -25,6 +27,16 @@ export default function generateMenuPage() {
             image: WaywardCompass,
             description: "Shows the location of the Knight on the Map."
         },
+        {
+            name: "Soul Catcher",
+            image: SoulCatcher,
+            description: "Increases the amount of SOUL gained when hitting enemies with the Nail."
+        },
+        {
+            name: "Shaman Stone",
+            image: ShamanStone,
+            description: "Increases the damage of Spells and the size of Vengeful Spirit/Shade Soul."
+        },
     ]
 
     const menuGrid = document.createElement('div');
@@ -36,7 +48,7 @@ export default function generateMenuPage() {
     for (let i = 0; i < menus.length; i++) {
         const menu = document.createElement('div');
         const menuImage = document.createElement('img');
-        const menuName = document.createElement('h2');
+        const menuName = document.createElement('h3');
         const menuDesc = document.createElement('p');
 
         menu.classList.add('menu-block');
