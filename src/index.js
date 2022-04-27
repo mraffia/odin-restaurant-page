@@ -48,7 +48,7 @@ function currentPage() {
                 tabs.children[i].classList.remove('active');
             }
             e.target.classList.add('active');
-            
+
             if (e.target.id === 'home') {
                 content.appendChild(pages[0].pageContent);
             } else if (e.target.id === 'goods') {
@@ -64,6 +64,7 @@ function currentPage() {
     header.appendChild(h1);
     header.appendChild(tabs);
     content.appendChild(pages[0].pageContent);
+    tabs.children[0].classList.add('active');
     
     document.body.appendChild(header);
     document.body.appendChild(content);
